@@ -1,0 +1,185 @@
+  
+*{ /*全ての要素に対する変更*/
+    margin:0;
+    padding:0;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5vh;
+    background-color:#474a4d;
+    z-index:2;    
+}
+
+.head_title{
+    position: absolute;
+    color:#ffffff;
+    left: 5vh;
+    font-size: 3vh;
+}
+
+.link{
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.hamburger_menu{
+    position: absolute;
+    top:1.75vh;
+    right: 10vh;
+}
+
+.hamburger_btn {
+    position: fixed;
+    border: none; /*ボタンを平面に*/
+    padding: 0;
+    color: #ffffff;
+    background: #474a4d;
+    font-size: 2.5vh;
+}
+  
+.hamburger_btn:hover {
+  color: #f3981d;
+}
+
+.menu_list{
+    position: relative;
+    top:3.4vh;
+    left: 10vh;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    background-color: #f3981d;
+}
+
+.for_member {
+    font-size: 2vh;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.kibousya {
+    margin-left: 5%;
+    font-size: 2vh;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.record {
+    margin-left: 5%;
+    font-size: 2vh;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    margin-top: 5.1vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: #117799;
+    height:80vh;
+}
+
+.title{
+    margin-top: 3vw;
+    margin-left: 3vw;
+    color:#ffffff;
+    font-size: 5vh;
+
+}
+
+a{
+    color: #ffffff;
+    text-decoration:none;
+    margin-left: 3vw;
+}
+
+footer{
+    height:15vh;
+    background-color:#000000;
+    color: #ffffff;;
+}
+
+.foot-title{
+    color:#ffffff;
+    margin-left: 10px;
+}
+
+
+
+/* ボタン全体 */
+.flowbtn8{
+    border-radius:50%;
+    position:relative;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    font-size:30px;
+    text-decoration:none;
+    transition:.5s;
+    }
+/* ボタンマウスホバー時のテキスト指定 */
+.flowbtn8:hover{
+    color:#fff!important;
+}
+/* アイコンをど真ん中に */
+.flowbtn8 i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -ms-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+/* Twitter */
+.flowbtn8.fl_tw2{
+    border:solid 2px #55acee;
+    color:#55acee;
+    background-color: #ffffff;
+    
+}   
+/* Twitterマウスホバー時 */
+.flowbtn8.fl_tw2:hover{
+    border:solid 2px #ffffff;
+    background:#55acee;
+}
+/* Instagram */
+.flowbtn8.insta_btn2 {
+    border:solid 2px #c6529a;
+    color:#c6529a;
+    background-color: #ffffff;
+    font-size:35px;
+}
+/* Instagramマウスホバー時 */
+.flowbtn8.insta_btn2:hover{
+    border:solid 2px #ffffff;
+    background:#c6529a;
+}
+
+/* Mail */
+.flowbtn8.fl_ma2{
+    border:solid 2px #f3981d;
+    color:#f3981d;	
+    background-color: #ffffff;
+    font-size:28px;
+}
+/* Mailマウスホバー時 */
+    .flowbtn8.fl_ma2:hover{
+    border:solid 2px #ffffff;
+    background:#f3981d;
+}
+  
+/* ボタン全体の位置 */
+.sns_btn{
+    position: fixed;
+    top: 70%;
+    right: 5%;
+    display:flex;
+    flex-direction: column;
+}

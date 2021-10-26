@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <title>会津大学 - 天文部</title>
+</head>
+
+<body>
+    <div id="top">
+      
+        <header>            
+            <h1 class="head_title"><a class="link" href="index.html">天文部</a></h1> 
+                <div class="hamburger_menu">
+                <button class ="hamburger_btn" @click= "hamburger = !hamburger">Menu</button>
+                <template v-if="hamburger">
+                    <ul class="menu_list">
+                        <a class="for_member" href="for_member/index.html">部員向け</a><br>
+                        <a class="kibousya" :href="url_kibousya">入部希望</a><br>
+                        <a class="record" href="record/index.html">活動記録</a><br>
+                    </ul>
+                </template>                  
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="content1">
+                <img class="background-image1" src="HP_Photo/univ2.jpeg">
+                <h1 class=" main-title">
+                    <span class="large">A</span>izu<br>
+                    <span class="large">A</span>stronomy<br>
+                    <span class="large">C</span>lub
+                </h1>
+            </div>
+
+            <p class="devided_line">-----------------------------------------------------------------</p>
+
+            <div class="content2">
+                <img class="background-image2" src="HP_Photo/屋上.jpeg">
+                <p>天文部では、ゆる〜く天体観測をしようと思います。研究棟屋上に設置されている望遠鏡を用いたり、会津各地の星が見やすい場所に移動するつもりです。また、メンバーの仲を深めるためのイベント(新歓やBBQ等)もしたいと思っています。</p>
+            </div>
+
+            <p class="devided_line">-----------------------------------------------------------------</p>
+
+            <div class="content3">
+                <p>天文部の活動として、遠征(旅行)にも行く予定です。まだ場所は未定ですが、長野県に行きたいという意見が多いので部員で話し合った上で場所を決めようと思います。</p>
+                <img class="background-image3" src="HP_Photo/mirror.png">
+            </div>
+
+            <div class="sns_btn">
+                <a :href="url_instagram" class="flowbtn8 insta_btn2"><i class="fab fa-instagram"></i></a>
+                <a :href="url_twitter" class="flowbtn8 fl_tw2"><i class="fab fa-twitter"></i></a>
+                <a :href="mail_address" class="flowbtn8 fl_ma2"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <footer>
+            <h1 class=" foot-title">天文部</h1>            
+        </footer>
+
+    </div>
+                <script src="vue.js"></script>
+                <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <title>【天文部】メンバー紹介</title>
+</head>
+
+<body>
+    <div id="record">
+        
+        <header>            
+            <h1 class="head_title"><a class="link" href="../index.html">天文部</a></h1> 
+                <div class="hamburger_menu">
+                <button class ="hamburger_btn" @click= "hamburger = !hamburger">Menu</button>
+                <template v-if="hamburger">
+                    <ul class="menu_list">
+                        <a class="for_member" href="../for_member/index.html">部員向け</a><br>
+                        <a class="kibousya" :href="url_kibousya">入部希望</a><br>
+                        <a class="record" href="index.html">活動記録</a><br>
+                    </ul>
+                </template>                  
+            </div>
+        </header>
+
+        <div class="main">
+            <h1 class="main_title">活動記録</h1>
+            <div class="sns_btn">
+                <a href="https://instagram.com/aizu_astro" class="flowbtn8 insta_btn2"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/aizu_astro" class="flowbtn8 fl_tw2"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:s1280167@u-aizu.ac.jp" class="flowbtn8 fl_ma2"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <footer>    
+            <h1 class=" foot-title">天文部</h1>
+        </footer>
+
+    </div>
+    <script src="vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
